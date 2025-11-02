@@ -1,0 +1,112 @@
+# Delphi/Pascal .gitignore
+
+# Compiled files
+*.exe
+*.dll
+*.bpl
+*.dcu
+*.dcp
+*.so
+*.apk
+*.drc
+*.map
+*.dres
+*.rsm
+*.tds
+*.dcu
+*.lib
+*.a
+*.o
+*.ocx
+*.ppu
+*.compiled
+
+# Package Files
+*.dcp
+*.bpl
+
+# Delphi local files (user-specific)
+*.local
+*.identcache
+*.dsk
+*.~*
+*.stat
+*.projdata
+
+# Delphi project files (generated)
+*.cfg
+*.dof
+*.bdsproj
+*.cbproj
+*.bdsgroup
+*.groupproj
+
+# Free Pascal Compiler
+*.ppu
+*.o
+*.or
+*.compiled
+link.res
+ppas.sh
+
+# Lazarus
+backup/
+*.lps
+*.compiled
+
+# Log files
+*.log
+
+# Temporary files
+__history/
+__recovery/
+*.~pas
+*.~dfm
+*.~dpr
+*.~dpk
+
+# IDE specific
+*.dproj.local
+*.cbproj.local
+
+# Binary output
+Win32/
+Win64/
+Debug/
+Release/
+Android/
+iOSDevice/
+iOSSimulator/
+
+# macOS
+.DS_Store
+*.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Backup files
+*~
+*.bak
+*.swp
+*.swo
+
+# Test coverage
+*.coverage
+coverage/
+
+# Documentation generated
+docs/html/
+docs/latex/
+
+# Node modules (if using any JS tools)
+node_modules/
