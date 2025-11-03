@@ -21,7 +21,8 @@ program SystemZgloszen;
 {$codepage utf8}
 
 uses
-  SysUtils, DateUtils;
+  SysUtils, DateUtils
+  {$IFDEF WINDOWS}, Windows{$ENDIF};
 
 type
   TPriorytet = (prNiski, prSredni, prWysoki, prKrytyczny);
@@ -207,6 +208,7 @@ procedure NoweZgloszenie;
 var
   zgl: TZgloszenie;
   wybor: Integer;
+  linia: String;
 begin
   CzyscEkran;
   WriteLn('═══════════════════════════════════════════════════');
@@ -236,7 +238,6 @@ begin
   WriteLn('Opis problemu (zakończ pustą linią):');
   zgl.OpisProblemu := '';
   repeat
-    var linia: String;
     ReadLn(linia);
     if linia <> '' then
     begin
